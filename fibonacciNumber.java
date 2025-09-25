@@ -1,20 +1,27 @@
 import java.util.*;
-public class fibonacciNumber{
-    public static void main(String []args){
+
+public class FibonacciNumber {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter n ");
         int n = sc.nextInt();
-        
-        System.out.println("The Fibonacci series is ");
-        int a=0;
-        int b=1;
-        for(int i=0;i<n;i++)
-        {
-            System.out.print(a +" ");
-            int next = a+b ;
-             a =b;
-             b= next;
+
+        if (n <= 1) {
+            System.out.println(n);
+            return;
         }
-        sc.close();        
+
+        int a = 0, b = 1, c = 0;
+        for (int i = 2; i <= n; i++) {
+            c = a + b; 
+            a = b;      
+            b = c;      
+        }
+        System.out.println(b);  
     }
 }
+
+
+// Loop steps:
+// i=2 → c=1, a=1, b=1
+// i=3 → c=2, a=1, b=2
+// i=4 → c=3, a=2, b=3
