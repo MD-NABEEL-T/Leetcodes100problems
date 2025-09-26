@@ -5,7 +5,6 @@ public class factorialTrailingZeroes
     {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        // if(n==0) return 1;
         if(n<5) System.out.println(0);
         else 
         {
