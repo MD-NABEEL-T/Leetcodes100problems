@@ -1,3 +1,4 @@
+// used fibonacci series concept here
 import java.util.*;
 public class climbStairs{
     public static void main(String []args)
