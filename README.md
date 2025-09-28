@@ -5,3 +5,4 @@
 <br>1. fibonacciNumber
 <br>2. factorialTrailingZeroes
 <br>3. climbStairs
+<br>4. powerOfTwo
