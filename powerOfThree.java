@@ -15,8 +15,8 @@ public class powerOfTwo
         {
             while(n!=1)
             {
-                if(n%2 != 0) return false;
-                else n=n/2;
+                if(n%3 != 0) return false;
+                else n=n/3;
 
             }
             return true;
@@ -24,8 +24,7 @@ public class powerOfTwo
     }
 }
 
-/* Example 1:
-
-Input: n = 1
-Output: truegit remote 0v
-Explanation: 2 power 0 = 1*/
+// Example 1:
+// Input: n = 27
+// Output: true
+// Explanation: 27 = 33
