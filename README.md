@@ -7,3 +7,4 @@
 <br>3. climbStairs
 <br>4. powerOfTwo
 <br>5. powerOfThree
+<br>6. powerOfFour
