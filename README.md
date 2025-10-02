@@ -8,3 +8,4 @@
 <br>4. powerOfTwo
 <br>5. powerOfThree
 <br>6. powerOfFour
+<br>7. xPowern
