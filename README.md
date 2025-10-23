@@ -9,3 +9,4 @@
 <br>5. powerOfThree
 <br>6. powerOfFour
 <br>7. xPowern
+<br>8. generateParanthesis 

@@ -35,6 +35,7 @@ public class xPowern{
     }
     public static double mainPow(double x,long n)
         {
+            if(x==0) return 0;
             if(n==0) return 1;
             double half=mainPow(x,n/2);
             if(n%2==0) return half*half;
