@@ -2,12 +2,6 @@ import java.util.*;
 
 public class permutations {
 
-    public static List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> res = new ArrayList<>();
-        backtrack(nums, new ArrayList<>(), new boolean[nums.length], res);
-        return res;
-    }
-
     public static void backtrack(int[] nums, List<Integer> current, boolean[] used, List<List<Integer>> res) {
         // base case: if current list size == nums length, we found a permutation
         if (current.size() == nums.length) {
@@ -30,6 +24,11 @@ public class permutations {
             used[i] = false;
             current.remove(current.size() - 1);
         }
+    }
+    public static List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        backtrack(nums, new ArrayList<>(), new boolean[nums.length], res);
+        return res;
     }
     public static void main(String[] args) {
         int[] nums = {1,2,4};
