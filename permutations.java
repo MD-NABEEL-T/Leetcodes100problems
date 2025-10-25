@@ -1,11 +1,6 @@
 import java.util.*;
 
 public class permutations {
-    public static void main(String[] args) {
-        int[] nums = {1,4};
-        List<List<Integer>> result = permute(nums);
-        System.out.println(result);
-    }
 
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
@@ -35,5 +30,10 @@ public class permutations {
             used[i] = false;
             current.remove(current.size() - 1);
         }
+    }
+    public static void main(String[] args) {
+        int[] nums = {1,2,4};
+        List<List<Integer>> result = permute(nums);
+        System.out.println(result);
     }
 }
