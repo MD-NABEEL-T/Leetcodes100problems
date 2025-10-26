@@ -35,3 +35,5 @@ public class permutations{
         System.out.println(result);
     }
 }
+
+// refer apna college or the screenshot 
