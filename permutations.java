@@ -1,5 +1,8 @@
 import java.util.*;
 
+// The outer list contains all permutations.
+// Each inner list is one permutation.
+
 public class permutations {
 
     public static void swap(int[] nums, int i, int j) {
