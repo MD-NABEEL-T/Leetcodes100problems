@@ -30,7 +30,7 @@ public class permutations{
         return result;
     }
     public static void main(String []args){
-        int nums[] = {1,2,3};
+        int nums[] = {1,2,3,4};
         List<List<Integer>> result = permute(nums);
         System.out.println(result);
     }
