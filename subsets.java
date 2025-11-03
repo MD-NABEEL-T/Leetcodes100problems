@@ -1,4 +1,5 @@
-public class subsetArray {
+import java.util.*;
+public class subsets{
     public static void subset(int[] nums, int idx, List<Integer> curr) {
         if (idx == nums.length) {
             System.out.println(curr);
@@ -16,6 +17,14 @@ public class subsetArray {
 
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
-        subset(nums, 0, new ArrayList<>());
+        List<Integer> newArr=new ArrayList<>();
+        subset(nums, 0, newArr);
     }
 }
+//                    []
+//                 /      \
+//           [1]             []
+//         /    \          /    \
+//     [1,2]   [1]      [2]     []
+//     /   \   /  \     /  \    / \
+// 123 12 13 1 23  2   3   []
